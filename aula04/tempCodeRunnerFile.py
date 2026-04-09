@@ -1,8 +1,12 @@
-valor_compra = float(input("Insira o valor: "))
-pagamento = input("Pagamento: ").lower()
-if valor_compra >250.00 and pagamento == "vista":
-    desconto = valor_compra * 0.16
-    valor_total = valor_compra - desconto
-    print(f"{valor_total}")
+nota = float(input("Insira a nota: "))
+frequencia = float(input("Informe a frequência: "))
+
+if nota >=7:
+        #Aprovado por nota, mas precisa chegar a frequência
+
+    if frequencia >=75:
+        print("Aluno aprovado por nota e frequência")
+    else: 
+        print("Reprovado por frequência baixa")
 else:
-    print(f"{valor_compra}")
+        print("Reprovado por nota baixa:")

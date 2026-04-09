@@ -52,6 +52,50 @@ if usuario == "admin" and senha == "1234":
 else:
     print("Usuário ou senha incorretos")
 
+#Exemplo ifs encadeados
 
+nota = 2
+if nota >=9:
+    print("A")
+elif nota >=7:
+    print("B")
+elif nota >=5:
+    print("C")
+elif nota >=3:
+    print("D")
+else:
+    print("E")
+
+
+
+
+#Exemplo ifs não encadeados
+
+nota = 10
+if nota >=9:
+    print("A")
+if nota >=7:
+    print("B")
+if nota >=5:
+    print("C")
+if nota >=3:
+    print("D")
+else:
+    print("E")
+
+#Ifs aninhados
+    
+nota = float(input("Insira a nota: "))
+frequencia = float(input("Informe a frequência: "))
+
+if nota >=7:
+        #Aprovado por nota, mas precisa chegar a frequência
+
+    if frequencia >=75:
+        print("Aluno aprovado por nota e frequência")
+    else: 
+        print("Reprovado por frequência baixa")
+else:
+        print("Reprovado por nota baixa:")
 
     
